@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav">
+                <div class="menu">
+                    <h3><a href="highscores.html">Highscores</a></h3>
+                    <h3 id="timer">Time remaining: <span id="countdown"></span></h3>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div class="container">
+            <div class="start" id="start-text">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Try to answer the following code-related questions within the time limit. Keep in mind that
+                    incorrect answers will penalize your score/time by ten seconds!</p>
+                <button id="start-btn">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+    <div id="start-container">
+        <div id="quiz-container" style="display: none;">
+            <h2 id="question"></h2>
+            <div id="choices"></div>
+            <p id="feedback"></p>
+        </div>
+    </div>
+    <div id="end-container" style="display: none;">
+        <h2>Congratulations!</h2>
+        <p>Your score is <span id="score"></span>.</p>
+        <form id="score-form">
+            <label for="initials">Enter your initials:</label>
+            <input type="text" id="initials" maxlength="3">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
