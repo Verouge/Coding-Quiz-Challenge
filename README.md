@@ -44,4 +44,4 @@ Our mission as coding boot camp students is to actively participate in a timed q
 https://verouge.github.io/Coding-Quiz-Challenge/
 
 ![Screenshot](/Assets/website-img.png)
-![Screenshot](/Assets/prompt-img.png)
+![Screenshot](/Assets/highscore-img.png)

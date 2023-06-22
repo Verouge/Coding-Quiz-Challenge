@@ -9,3 +9,36 @@ body {
   background-color: #f1f1f1;
   color: #333;
 }
+
+.highscores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  flex-wrap: wrap;
+  margin-top: 1%;
+}
