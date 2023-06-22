@@ -95,13 +95,14 @@ function startQuiz() {
 
 function startTimer() {
   countdown--;
-  countdownElement.textContent = countdown;
 
   if (countdown <= 0) {
+    countdown = 0;
     endQuiz();
   }
-}
 
+  updateTimer();
+}
 function showQuestion() {
   if (currentQuestionIndex >= quizData.length) {
     endQuiz();
@@ -138,6 +139,8 @@ function checkAnswer(answer) {
   }
 
   clearInterval(timerInterval);
+  updateTimer(); // Update the timer immediately after the user selects an answer
+
   currentQuestionIndex++;
   setTimeout(() => {
     showQuestion();
@@ -147,6 +150,10 @@ function checkAnswer(answer) {
   if (countdown === 0) {
     endQuiz();
   }
+}
+
+function updateTimer() {
+  countdownElement.textContent = countdown;
 }
 
 function endQuiz() {
