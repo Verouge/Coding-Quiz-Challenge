@@ -142,12 +142,12 @@ function checkAnswer(answer) {
   updateTimer(); // Update the timer immediately after the user selects an answer
 
   currentQuestionIndex++;
-  setTimeout(() => {
-    showQuestion();
-    timerInterval = setInterval(startTimer, 1000);
-  }, 1000);
-
-  if (countdown === 0) {
+  if (currentQuestionIndex < quizData.length) {
+    setTimeout(() => {
+      showQuestion();
+      timerInterval = setInterval(startTimer, 1000);
+    }, 1000);
+  } else {
     endQuiz();
   }
 }
